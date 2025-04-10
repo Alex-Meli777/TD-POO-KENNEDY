@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="root" xmlns:fx="http://javafx.com/fxml" spacing="10" styleClass="appareil-cell">
+    <!-- Image à gauche -->
+    <ImageView fx:id="imageView" fitWidth="50" fitHeight="50" preserveRatio="true" />
+
+    <!-- Textes au centre -->
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <Label fx:id="nomLabel" text="Titre principal" styleClass="title-text" />
+        <Label fx:id="empreinteLabel" text="Sous-titre descriptif" styleClass="subtitle-text" />
+    </VBox>
+
+    <!-- Texte à droite -->
+    <Label fx:id="statutLabel" text="Texte à droite" styleClass="right-text" />
+
+</HBox>
